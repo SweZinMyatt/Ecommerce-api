@@ -232,7 +232,8 @@
     @apply mt-10 flex gap-10 px-20
   }
   .sofa{
-    @apply bg-[#F9F1E7] rounded-lg
+    @apply bg-[#F9F1E7] rounded-lg;
+    background-image: url("../images/Rectangle.svg");
   }
   .related-title{
     @apply text-center text-[36px] font-semibold
@@ -281,5 +282,6 @@
   .input{
     @apply p-3 w-full rounded-lg border border-muted
   }
+  
   }
 
