@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="./images/logo.svg">
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- header -->
+    <nav>
+      <div class="header">
+        <div class="flex gap-2">
+          <img src="./images/logo.svg" alt="Logo Image" class="w-15 h-10">
+          <h1 class="font-mont font-bold text-[34px]">Furniro</h1>
+        </div>
+        <div class="header-link">
+          <a href="index.html" class="">Home</a>
+          <a href="shop.html" class="">Shop</a>
+          <a href="#" class="">About</a>
+          <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="navLink-container">
+          <img src="./images/vector.svg" alt="vector image" class="header-icon">
+          <img src="./images/search.svg" alt="search image" class="header-icon">
+          <img src="./images/heart.svg" alt="heart image" class="header-icon">
+          <img src="./images/cart.svg" alt="cart image" class="header-icon">
+        </div>
+      </div>
+    </nav>
+
+    <!--hero section-->
+    <section class="contact-hero">
+        <div class="contactbg-img">
+            <img src="./images/logo.svg" alt="logo" class="w-10 h-10">
+          <h1 class="contactLink">Contact</h1>
+          <div class="heroLinks">
+            <a href="index.html" class="font-semibold">Home</a>
+            <span>&gt;</span>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="px-20 py-15">
+        <h1 class="contact-title">Get In Touch With Us</h1>
+        <p class="para pt-4">For More Information About Our Product & Services. Please Feel Free To Drop Us </p>
+        <p class="para">An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+        
+        <div class="contact-container">
+            <!-- Left Info Block -->
+            <div class="left-info-block">
+                <!-- Address -->
+                <div class="flex gap-5">
+                    <img src="./images/icons8-location-24.png" alt="location" class="w-5 h-5">
+                    <div>
+                        <h1 class="title">Address</h1>
+                        <div class="info">
+                            <h3>236 5th SE Avenue, New York NY10000, United States</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phone -->
+                <div class="flex gap-5">
+                    <img src="./images/icons8-phone-50.png" alt="phone" class="w-5 h-5">
+                    <div>
+                        <h1 class="title">Phone</h1>
+                        <div class="info">
+                            <h3>Mobile: +(84) 546-6789</h3>
+                            <h3>Hotline: +(84) 456-6789</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Working Time -->
+                <div class="flex gap-5">
+                    <img src="./images/icons8-time-50.png" alt="working time" class="w-5 h-5">
+                    <div>
+                        <h1 class="title">Working Time</h1>
+                        <div class="info">
+                            <h3>Monday-Friday: 9:00 - 22:00</h3>
+                            <h3>Saturday-Sunday: 9:00 - 21:00</h3>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Right Form Block -->
+            <form class="right-block-container">
+                <div class="right-subcontainer">
+                    <label class="subcontainer-title">Your name</label>
+                    <input type="text" class="input" placeholder="Abc">
+                </div>
+                <div class="flex flex-col space-y-5">
+                    <label class="subcontainer-title">Email address</label>
+                    <input type="email" class="input" placeholder="Abc@def.com">
+                </div>
+                <div class="right-subcontainer">
+                    <label class="subcontainer-title">Subject</label>
+                    <input type="text" class="input" placeholder="This is an optional">
+                </div>
+                <div class="right-subcontainer">
+                    <label class="subcontainer-title">Message</label>
+                    <textarea name="message" rows="4" class="input" placeholder="Hi! i’d like to ask about"></textarea>
+                </div>
+                <button type="submit" class="bg-primary text-white px-10 py-5 rounded-lg w-[237px]">Submit</button>
+            </form> 
+        </div>
+    </section>
+
+    <!--service section-->
+    <section class="service-container">
+      <div class="flex gap-4">
+        <img src="./images/icons8-prize-80.png" alt="prize" class="w-15 h-15">
+        <div>
+          <h1  class="service-title">High Quality</h1>
+          <p class="service-subtitle">crafted from top materials</p>
+        </div>
+      </div>
+      
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-warranty-64.png" alt="warrenty" class="w-15 h-15">
+        <div>
+          <h1  class="service-title">Warranty Protection</h1>
+          <p class="service-subtitle">Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-gift-64.png" alt="shipping" class="w-15 h-15">
+        <div>
+          <h1  class="service-title">Free Shipping</h1>
+          <p class="service-subtitle">Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-call-center-50.png" alt="callcenter" class="w-15 h-15">
+        <div>
+          <h1  class="service-title">24 / 7 Support</h1>
+          <p class="service-subtitle">Dedicated support</p>
+        </div>
+    </section>
+        <!-- footer section -->
+    <section>
+      <div class="footer-container">
+        <div>
+          <h1 class="funiro text-center">Funiro.</h1>
+          <div class="funiro-desc">
+            400 University Drive Suite 200 Coral<br> Gables,<br>
+            FL 33134 USA
+          </div>
+        </div>
+        <div class="link-container text-center">
+            <p class="link">Links</p>
+            <a href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Contact</a>
+        </div>
+        <div class="help-container text-center">
+            <p class="help text-center">Help</p>
+            <p>Payment Options</p>
+            <p>Returns</p>
+            <p>Privacy Policies</p>
+        </div>
+        <div class="newsletter-container">
+            <p class="newsletter text-center">Newsletter</p>
+            <div class="email-container">
+              <input type="email" placeholder="Enter Your Email Address" class="emailAddress">
+              <button class="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+      </div>
+      <div class="rights">2023 furino. All rights reverved</div>
+    </section>
+  </body>
+</html>

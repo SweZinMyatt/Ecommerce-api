@@ -1,0 +1,30 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <script type="module">
+    import { getProdcut } from "./services/products.js";
+
+    const product = await getProdcut(2);
+
+    console.log(product);
+  </script>
+  <body>
+    <h1>Hello world</h1>
+  </body>
+</html>

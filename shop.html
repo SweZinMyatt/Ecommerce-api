@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="./images/logo.svg">
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+     <!-- header -->
+    <nav>
+      <div class="header">
+        <div class="flex gap-2">
+          <img src="./images/logo.svg" alt="Logo Image" class="w-15 h-10">
+          <h1 class="font-mont font-bold text-[34px]">Furniro</h1>
+        </div>
+        <div class="header-link">
+          <a href="index.html" class="">Home</a>
+          <a href="shop.html" class="">Shop</a>
+          <a href="#" class="">About</a>
+          <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="navLink-container">
+          <img src="./images/vector.svg" alt="vector image" class="header-icon">
+          <img src="./images/search.svg" alt="search image" class="header-icon">
+          <img src="./images/heart.svg" alt="heart image" class="header-icon">
+          <img src="./images/cart.svg" alt="cart image" class="header-icon">
+        </div>
+      </div>
+    </nav>
+
+    <!--hero section-->
+   <section class="shopHero-container">
+    <div class="text-center">
+      <h1 class="shopHero-title">Shop</h1>
+      <div class="shopHero-link">
+        <a href="index.html" class="font-semibold">Home</a>
+        <span>&gt;</span>
+        <a href="shop.html">Shop</a>
+      </div>
+    </div>
+</section>
+    <!--product section-->
+    <section>
+      <div class="mx-[50px] md:mx-[102px] mt-10">
+        <div id="item-container" class="item-container"> 
+        </div>
+        <div class="next-btnContainer">
+          <div class="p-5 rounded-lg bg-primary">1</div>
+          <div class="next-btn">2</div>
+          <div class="next-btn">3</div>
+          <div class="next-btn">Next</div>
+        </div>
+      </div>
+    </section>
+    <!--service section-->
+    <section class="service-container">
+      <div class="flex gap-4">
+        <img src="./images/icons8-prize-80.png" alt="prize" class="w-10 h-10 md:w-15 md:h-15">
+        <div>
+          <h1  class="service-title">High Quality</h1>
+          <p class="service-subtitle">crafted from top materials</p>
+        </div>
+      </div>
+      
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-warranty-64.png" alt="warrenty" class="w-10 h-10 md:w-15 md:h-15">
+        <div>
+          <h1  class="service-title">Warranty Protection</h1>
+          <p class="service-subtitle">Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-gift-64.png" alt="shipping" class="w-10 h-10 md:w-15 md:h-15">
+        <div>
+          <h1  class="service-title">Free Shipping</h1>
+          <p class="service-subtitle">Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="./images/icons8-call-center-50.png" alt="callcenter" class="w-10 h-10 md:w-15 md:h-15">
+        <div>
+          <h1  class="service-title">24 / 7 Support</h1>
+          <p class="service-subtitle">Dedicated support</p>
+        </div>
+    </section>
+        <!-- footer section -->
+    <section>
+      <div class="footer-container">
+        <div>
+          <h1 class="funiro text-center">Funiro.</h1>
+          <div class="funiro-desc">
+            400 University Drive Suite 200 Coral<br> Gables,<br>
+            FL 33134 USA
+          </div>
+        </div>
+        <div class="link-container text-center">
+            <p class="link">Links</p>
+            <a href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Contact</a>
+        </div>
+        <div class="help-container text-center">
+            <p class="help text-center">Help</p>
+            <p>Payment Options</p>
+            <p>Returns</p>
+            <p>Privacy Policies</p>
+        </div>
+        <div class="newsletter-container">
+            <p class="newsletter text-center">Newsletter</p>
+            <div class="email-container">
+              <input type="email" placeholder="Enter Your Email Address" class="emailAddress">
+              <button class="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+        
+      </div>
+      <div class="rights">2023 furino. All rights reverved</div>
+    </section>
+    <!-- scripts -->
+    <script type="module">
+      import { getProdcuts } from "./services/products.js";
+
+      const products = await getProdcuts();
+
+      console.log(products);
+    </script>
+  </body>
+</html>

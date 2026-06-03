@@ -1,0 +1,143 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <nav>
+      <div class="header">
+        <div class="flex gap-2">
+          <img src="./images/logo.svg" alt="Logo Image" class="w-15 h-10">
+          <h1 class="font-mont font-bold text-[34px]">Furniro</h1>
+        </div>
+        <div class="header-link">
+          <a href="index.html" class="">Home</a>
+          <a href="shop.html" class="">Shop</a>
+          <a href="#" class="">About</a>
+          <a href="#" class="">Contact</a>
+        </div>
+        <div class="navLink-container">
+          <img src="./images/vector.svg" alt="vector image" class="header-icon">
+          <img src="./images/search.svg" alt="search image" class="header-icon">
+          <img src="./images/heart.svg" alt="heart image" class="header-icon">
+          <img src="./images/cart.svg" alt="cart image" class="header-icon" id="cart">
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <section class="hero-container">
+      <div class="hero-card">
+        <p>New Arrival</p>
+
+        <h1 class="hero-label">Discover Our  New Collection</h1>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />elit
+          tellus, luctus nec ullamcorper mattis.
+        </p>
+
+        <button class="hero-btn">
+          <a href="./detail.html">Buy Now</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- browse section -->
+    <section>
+      <div class="mx-[131px] mt-10">
+        <h1 class="browse-title">Browse The Range</h1>
+      <h3 class="browse-desc">Lorem ipsum dolor sit  amet, consectetur adipiscing elit.</h3>
+      <div class="flex flex-col items-center justify-center lg:flex-row gap-3 pt-10">
+        <div>
+          <div class="browseImage-container">
+            <img src="./images/image 106.svg" alt="dining" class="browse-img" >
+          </div>
+          <h2 class="browseImg-label">Dining</h2>
+        </div>
+        <div>
+          <div class="browseImage-container">
+            <img src="./images/image 100.svg" alt="living" class="browse-img">
+          </div>
+          <h2 class="browseImg-label">Living</h2>
+        </div>
+        <div>
+          <div class="browseImage-container">
+            <img src="./images/Mask Group.svg" alt="bed room" class="browse-img">
+          </div>
+          <h2 class="browseImg-label">Bed Room</h2>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- product section -->
+    <section>
+      <div class="product-container">
+        <h1 class="product-title">Our Products</h1>
+        <div id="item-container" class="item-container"> 
+        </div>
+        <div class="item-btnContainer">
+          <button class="item-btn">Show More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section>
+      <div class="footer-container">
+        <div>
+          <h1 class="funiro text-center">Funiro.</h1>
+          <div class="funiro-desc">
+            400 University Drive Suite 200 Coral<br> Gables,<br>
+            FL 33134 USA
+          </div>
+        </div>
+        <div class="link-container text-center">
+            <p class="link">Links</p>
+            <a href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Contact</a>
+        </div>
+        <div class="help-container text-center">
+            <p class="help text-center">Help</p>
+            <p>Payment Options</p>
+            <p>Returns</p>
+            <p>Privacy Policies</p>
+        </div>
+        <div class="newsletter-container">
+            <p class="newsletter text-center">Newsletter</p>
+            <div class="email-container">
+              <input type="email" placeholder="Enter Your Email Address" class="emailAddress">
+              <button class="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+      </div>
+      <div class="rights">2023 furino. All rights reverved</div>
+    </section>
+
+    <!-- scripts -->
+    <script type="module">
+      import { getProdcuts } from "./services/products.js";
+
+      const products = await getProdcuts();
+
+      console.log(products);
+    </script>
+  </body>
+</html>

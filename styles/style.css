@@ -1,0 +1,285 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-mont: "Montserrat", sans-serif;
+  --font-sans: "Poppins", sans-serif;
+
+  /* theme */
+
+  --color-primary: #b88e2f;
+  --color-secondary: #faf3ea;
+  --color-secondary-muted: #f4f5f7;
+  /* text color */
+  --color-foreground: #000;
+  --color-foreground-muted: #898989;
+  --color-muted: #9f9f9f;
+
+  --color-danger: #e97171;
+  --color-success: #2ec1ac;
+}
+
+@layer components {
+
+  .header{
+  @apply flex flex-col sm:flex-row items-center justify-between gap-5 w-full bg-white p-5;
+  }
+
+  .header-icon{
+    @apply w-10 h-5
+  }
+
+  .navLink-container{
+    @apply flex sm:gap-2 md:gap-4 p-5
+   }
+  .header-link{
+  @apply flex flex-wrap sm:flex-nowrap justify-center gap-5 sm:gap-3 lg:gap-5 font-medium text-[16px];
+  } 
+ .hero-container {
+  @apply w-full h-dvh relative bg-cover bg-no-repeat flex items-center mx-auto px-20 md:pe-[58px];
+
+  background-image: url("../images/banner.svg");
+}
+
+  .hero-card {
+    @apply py-[62px] sm:w-[400px] md:w-[643px] px-10 bg-[#FFF3E3] rounded-[10px] ms-auto;
+  }
+  .hero-label {
+    @apply text-primary mt-1 font-bold text-[30px] md:text-[52px];
+  }
+  .hero-desc {
+    @apply mt-4 font-medium;
+  }
+  .hero-btn {
+    @apply bg-primary mt-[20px] md:mt-[46px] text-white py-[10px] px-[30px] md:py-[25px] md:px-[72px] uppercase font-bold;
+  }
+  .browse-title{
+    @apply text-center font-bold text-[32px]
+  }
+  .browse-desc{
+    @apply text-center text-[#666666] text-[20px] font-[400px]
+  }
+  .browseImage-container{
+    @apply lg:w-[300px] lg:h-[400px] xl:w-[381px] xl:h-[480px] overflow-hidden
+  }
+  .browse-img{
+    @apply w-full h-full object-cover transition-transform ease-in-out hover:scale-110 duration-300 rounded-2xl
+  }
+  .browseImg-label{
+    @apply text-center text-[24px] text-[#333333] mt-5 font-[600px]
+  }
+  .product-container{
+    @apply mx-[50px] md:mx-[102px] mt-10
+  }
+  .product-title{
+    @apply text-center font-bold text-[40px] my-10
+  }
+  .item-container{
+    @apply grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-9 sm:gap-5 gap-y-10
+  }
+  .item-btnContainer{
+    @apply flex items-center justify-center py-10
+  }
+  .item-btn{
+    @apply px-10 py-3 md:px-20 md:py-4 bg-white text-primary border border-primary font-bold
+  }
+  .footer-container{
+    @apply grid grid-cols-2 space-y-8 sm:grid-cols-4 gap-10 border-t border-t-[#D9D9D9] border-b border-b-[#D9D9D9] p-10
+  }
+  .funiro{
+    @apply font-bold text-[24px] pb-10
+  }
+  .funiro-desc{
+    @apply text-[16px] text-muted
+  }
+  .link-container{
+    @apply flex flex-col space-y-10 font-semibold
+  }
+  .link{
+    @apply text-muted text-[16px]
+  }
+  .help-container{
+    @apply flex flex-col space-y-10 font-semibold
+  }
+  .help{
+    @apply text-muted text-[16px]
+  }
+  .newsletter-container{
+    @apply flex flex-col space-y-10 font-semibold
+  }
+  .newsletter{
+    @apply text-muted text-[16px]
+  }
+  .emailAddress{
+    @apply border-b border-b-black text-[14px] text-muted font-semibold
+  }
+  .subscribeBtn{
+    @apply border-b uppercase xl:w-full w-25 
+  }
+  .rights{
+    @apply p-8 text-[16px] font-semibold
+  }
+  /*shop*/
+  .shopHero-container {
+  @apply w-full h-[316px] bg-cover bg-center flex items-center justify-center;
+
+  background-image: url("../images/Rectangle.svg");
+}
+  .shopHero-title{
+    @apply text-[48px] font-[500]
+  }
+  .shopHero-link{
+    @apply flex items-center justify-center gap-2
+  }
+  .next-btnContainer{
+    @apply flex gap-5 items-center justify-center mt-5
+  }
+  .next-btn{
+    @apply p-5 rounded-lg bg-[#F9F1E7]
+  }
+  .service-container{
+    @apply grid grid-cols-2 md:grid-cols-4 gap-3 bg-[#F9F1E7] mt-10 px-5 py-20
+  }
+  .service-title{
+    @apply font-bold text-[25px]
+  }
+  .service-title{
+    @apply text-[20px] text-[#898989] font-semibold
+  }
+  /*footer*/
+  .email-container{
+    @apply flex flex-col xl:flex-row gap-5 items-center justify-center
+  }
+  /*single product*/
+ 
+  .cartInfo{
+    @apply absolute w-[417px] h-[746px] bg-white top-0 right-0
+  }
+  .cartHeader{
+    @apply flex justify-between mx-15 border-b border-muted py-5
+  }
+  .cartTitle{
+    @apply text-[24px] font-bold
+  }
+  .cartProduct-container{
+    @apply pt-10 flex flex-col space-y-5 px-5
+  }
+  .productImgone{
+    @apply w-[117px] h-[90px] bg-[#F9F1E7] rounded-lg
+  }
+  .productContainer{
+    @apply flex gap-8 justify-center items-center
+  }
+  .deleteProduct{
+    @apply flex items-center justify-center
+  }
+  .productImgtwo{
+    @apply w-[100px] h-[90px] bg-[#F9F1E7] rounded-lg
+  }
+  .productTitle{
+    @apply text-[16px] font-semibold pb-3
+  }
+  .totalPrice{
+    @apply pt-40 flex gap-15 px-10 pb-10 border-b border-muted
+  }
+  .total{
+    @apply text-[16px] font-semibold
+  }
+  .price{
+    @apply text-primary font-semibold
+  }
+  .statusContainer{
+    @apply flex gap-10 pt-10 px-5
+  }
+  .cart{
+    @apply px-4 py-2 border rounded-2xl
+  }
+  .checkout{
+    @apply px-4 py-2 border rounded-2xl
+  }
+  .comparison{
+    @apply px-4 py-2 border rounded-2xl
+  }
+  .singleHero-container{
+    @apply bg-[#F9F1E7] h-[100px] w-full px-10 py-5 md:py-10 flex
+  }
+  .singleProduct-container{
+    @apply flex md:flex-row flex-col gap-5 mt-4 mb-8 px-5 md:px-10 border-b border-[#D9D9D9] pb-20
+  }
+  .single-container{
+    @apply bg-[#F9F1E7] p-8 h-[400px] w-[420px] md:h-[500px] md:w-[520px] rounded-lg sm:pl-5 lg:pl-20 py-15
+  }
+  .desc-section{
+    @apply border-b border-[#D9D9D9] pb-20
+  }
+  .desc-container{
+    @apply flex gap-5 md:gap-15 justify-center items-center
+  }
+  .desc{
+    @apply text-[17px] md:text-[24px] font-semibold text-center
+  }
+  .desc-para{
+    @apply px-5 md:px-25 mt-10 
+  }
+  .para{
+    @apply text-muted text-[16px]
+  }
+  .sofaImg-container{
+    @apply mt-10 flex gap-10 px-20
+  }
+  .sofa{
+    @apply bg-[#F9F1E7] rounded-lg
+  }
+  .related-title{
+    @apply text-center text-[36px] font-semibold
+  }
+  /*contact*/
+  .contact-hero{
+    @apply w-full h-[316px] bg-cover bg-center flex items-center justify-center;
+    background-image: url("../images/Rectangle.svg");
+  }
+  .contactbg-img{
+    @apply text-center flex flex-col items-center
+  }
+  .contactLink{
+    @apply text-[48px] font-semibold
+  }
+  .heroLinks{
+    @apply flex items-center justify-center gap-2
+  }
+  .contact-title{
+    @apply text-center font-bold text-[36px]
+  }
+.para{
+    @apply text-center text-muted
+  }
+  .contact-container{
+    @apply flex flex-col md:flex-row gap-25 px-5 md:px-10 lg:px-20 py-25
+  }
+  .left-info-block{
+    @apply flex flex-col gap-10 
+  }
+  .title{
+    @apply font-semibold text-[24px]
+  }
+  .info{
+    @apply w-[212px] h-[72px] text-[16px]
+  }
+  .right-block-container{
+    @apply flex flex-col space-y-10 w-full
+  }
+  .right-subcontainer{
+    @apply flex flex-col space-y-5
+  }
+  .subcontainer-title{
+    @apply text-[16px] font-semibold
+  }
+  .input{
+    @apply p-3 w-full rounded-lg border border-muted
+  }
+  }
+

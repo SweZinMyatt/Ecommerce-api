@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./styles/global.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body class="relative w-full h-full">
+     <!-- header -->
+    <nav>
+      <div class="header">
+        <div class="flex gap-2">
+          <img src="./images/logo.svg" alt="Logo Image" class="w-15 h-10">
+          <h1 class="font-mont font-bold text-[34px]">Furniro</h1>
+        </div>
+        <div class="header-link">
+          <a href="index.html" class="">Home</a>
+          <a href="shop.html" class="">Shop</a>
+          <a href="#" class="">About</a>
+          <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="navLink-container">
+          <img src="./images/vector.svg" alt="vector image" class="header-icon">
+          <img src="./images/search.svg" alt="search image" class="header-icon">
+          <img src="./images/heart.svg" alt="heart image" class="header-icon">
+          <img src="./images/cart.svg" alt="cart image" class="header-icon" id="cart">
+        </div>
+      </div>
+    </nav>
+
+    <!--cart info-->
+    <div id="cartInfo" class="hidden bg-black/50 inset-0 opacity-100 absolute">
+        <div class="cartInfo">
+        <div class="cartHeader">
+            <h1 class="cartTitle">Shopping Cart</h1>
+            <img id="close" src="./images/close.png" alt="close" class="w-7 h-7 mt-1">
+        </div>
+        <div class="cartProduct-container">
+            <div class="productContainer">
+                <div class="productImgone"><img src="./images/relate2.webp" alt="relate2" class="w-20 h-20"></div>
+                <div>
+                    <h1 class="productTitle">Fjällräven Kanken Small Hiking</h1>
+                    <div class="flex gap-8"><p>1</p><span>*</span><p>$209</p></div>
+                </div>
+                <div class="deleteProduct"><img id="delete" src="./images/closeitem.png" alt="close item"></div>
+            </div>
+            <div class="productContainer">
+                <div class="productImgtwo"><img src="./images/Cloud sofa three seater + ottoman_1 1.svg" alt="sofa" class="w-20 h-20"></div>
+                <div>
+                    <h1 class="productTitle">Cloud sofa three seater</h1>
+                    <div class="flex gap-8"><p>1</p><span>*</span><p>$410</p></div>
+                </div>
+                <div class="deleteProduct"><img id="delete" src="./images/closeitem.png" alt="close item"></div>
+            </div>
+        </div> 
+        <div class="totalPrice">
+            <h1 class="total">Subtotal</h1>
+            <p class="price">$619</p>
+        </div>
+        <div class="statusContainer">
+            <button class="cart">Cart</button>
+            <button class="checkout">Checkout</button>
+            <button class="comparison">Comparison</button>
+        </div>
+    </div>
+</div>
+    
+    <!--hero section-->
+    <section class="singleHero-container">
+        <a href="index.html" class="text-[16px] text-muted">Home</a>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a href="shop.html" class="text-[16px] text-muted">Shop</a>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+    </section>
+    <!--product section-->
+    <section class="singleProduct-container">
+        <div id="single-container" class="single-container">
+        </div>
+        <div id="singleP-desc" class="pl-10 md:pl-20"></div>
+    </section>
+    <!--desc section-->
+    <section class="desc-section">
+        <div class="desc-container">
+            <h1 class="desc">Description</h1>
+            <h1 class="desc text-muted">Additional Information</h1>
+            <h1 class="desc text-muted">Reviews  [5]</h1>
+        </div>
+        <div class="desc-para">
+            <p class="desc-para">Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+            <p class="para pt-7">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+        </div>
+        <div class="sofaImg-container">
+            <div class="sofa">
+                <img src="./images/Cloud sofa three seater + ottoman_1 1.svg" alt="Cloud sofa three seater">
+            </div>
+            <div class="sofa">
+                <img src="./images/Cloud sofa three seater + ottoman_2 1.svg" alt="Cloud sofa three seater">
+            </div>
+        </div>
+    </section>
+    <!--related product section-->
+    <section>
+        <div class="py-15 px-10">
+            <h1 class="related-title">Related Products</h1>
+            <div id="item-container" class="item-container">
+                <div class="flex flex-col group relative overflow-hidden h-full">
+                    <div class="productImg">
+                        <img src="./images/relate1.jpg" alt="relate one" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="bg-secondary-muted px-4 py-4 h-3/9 flex flex-col">
+                        <div>
+                            <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A] line-clamp-3">Fjällräven Kanken Small Hiking</h1>
+                            <h3 class="text-[#898989] text-[10px] lg:text-[16px] font-[500px] mt-1">Men's clothing</h3>
+                        </div>
+                        <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A]">$209</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col group relative overflow-hidden h-full">
+                    <div class="h-1/2 flex items-center justify-center bg-white p-4">
+                        <img src="./images/relate2.webp" alt="relate one" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="bg-secondary-muted px-4 py-4 h-3/9 flex flex-col">
+                        <div>
+                            <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A] line-clamp-3">Fjällräven Kanken Small Hiking</h1>
+                            <h3 class="text-[#898989] text-[10px] lg:text-[16px] font-[500px] mt-1">Men's clothing</h3>
+                        </div>
+                        <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A]">$209</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col group relative overflow-hidden h-full">
+                    <div class="productImg">
+                        <img src="./images/relate3.webp" alt="relate one" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="bg-secondary-muted px-4 py-4 h-3/9 flex flex-col">
+                        <div>
+                            <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A] line-clamp-3">Fjällräven Kanken Small Hiking</h1>
+                            <h3 class="text-[#898989] text-[10px] lg:text-[16px] font-[500px] mt-1">Men's clothing</h3>
+                        </div>
+                        <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A]">$209</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col group relative overflow-hidden h-full">
+                    <div class="productImg">
+                        <img src="./images/relate4.webp" alt="relate one" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="bg-secondary-muted px-4 py-4 h-3/9 flex flex-col">
+                        <div>
+                            <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A] line-clamp-3">Fjällräven Kanken Small Hiking</h1>
+                            <h3 class="text-[#898989] text-[10px] lg:text-[16px] font-[500px] mt-1">Men's clothing</h3>
+                        </div>
+                        <h1 class="font-bold text-[16px] lg:text-[22px] text-[#3A3A3A]">$209</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btnContainer pt-1">
+                <button class="item-btn">Show More</button>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section>
+        
+      <div class="footer-container">
+        <div>
+          <h1 class="funiro text-center">Funiro.</h1>
+          <div class="funiro-desc">
+            400 University Drive Suite 200 Coral<br> Gables,<br>
+            FL 33134 USA
+          </div>
+        </div>
+        <div class="link-container text-center">
+            <p class="link">Links</p>
+            <a href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Contact</a>
+        </div>
+        <div class="help-container text-center">
+            <p class="help text-center">Help</p>
+            <p>Payment Options</p>
+            <p>Returns</p>
+            <p>Privacy Policies</p>
+        </div>
+        <div class="newsletter-container">
+            <p class="newsletter text-center">Newsletter</p>
+            <div class="email-container">
+              <input type="email" placeholder="Enter Your Email Address" class="emailAddress">
+              <button class="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+      </div>
+      <div class="rights">2023 furino. All rights reverved</div>
+    </section>
+    <!-- scripts -->
+    <script type="module">
+      import { getProdcut } from "./services/products.js";
+
+      const product = await getProdcut(1);
+
+      console.log(product);
+
+      const cart=document.getElementById("cart")
+      const cartInfo=document.getElementById("cartInfo")
+      cart.addEventListener("click",()=>{
+       cartInfo.classList.remove("hidden")
+      })
+      const close=document.getElementById("close")
+      close.addEventListener("click",()=>{
+        cartInfo.classList.add("hidden")
+      })
+    </script>
+  </body>
+</html>
