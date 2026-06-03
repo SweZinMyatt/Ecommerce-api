@@ -228,12 +228,11 @@
   .para{
     @apply text-muted text-[16px]
   }
-  .sofaImg-container{
+ .sofaImg-container{
     @apply mt-10 flex gap-10 px-20
   }
   .sofa{
-    @apply bg-[#F9F1E7] rounded-lg;
-    background-image: url("../images/Rectangle.svg");
+    @apply bg-[#F9F1E7] rounded-lg
   }
   .related-title{
     @apply text-center text-[36px] font-semibold

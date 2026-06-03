@@ -1151,10 +1151,15 @@
     font-size: 16px;
     color: var(--color-muted);
   }
+   .sofaImg-container {
+    margin-top: calc(var(--spacing) * 10);
+    display: flex;
+    gap: calc(var(--spacing) * 10);
+    padding-inline: calc(var(--spacing) * 20);
+  }
   .sofa {
   border-radius: var(--radius-lg);
   background-color: #F9F1E7;
-  background-image: url("../images/Rectangle.svg");
   width: 605px;
   height: 348px;
 }
